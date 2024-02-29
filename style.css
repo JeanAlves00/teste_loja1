@@ -126,7 +126,7 @@ section {
 .titulo {
     text-align: center;
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .slider {
@@ -154,4 +154,112 @@ section {
   
 .slider.slider1 div {
     background: #f0f0f0;
+}
+
+.promo {
+   text-align: center;   
+}
+
+.promo li {
+    display: inline-block;
+    vertical-align: top; /* Para alinhar os elementos ao topo */
+    margin-right: 20px;
+}
+
+.promo img {
+    width: 250px;
+    height: 300px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+footer .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .campo-pesquisa {
+        max-width: 200px;
+    }
+
+    .botao-pesquisa {
+        padding: 6px 12px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brands-list li {
+        margin-right: 6px;
+    }
+
+    .brands-list img {
+        max-width: 30px;
+    }
+
+    #destaques {
+        display: none;
+    }
+
+    .promo img {
+        max-width: 100%;
+    }
+
+    footer .container img {
+        height: 28px;
+    }
+}
+
+/* Estilos para telefones */
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .campo-pesquisa {
+        max-width: 150px;
+    }
+
+    .botao-pesquisa {
+        padding: 4px 8px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    .brands-list img {
+        max-width: 25px;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .slider2 img {
+        width: 80px;
+    }
+
+    footer .container img {
+        height: 24px;
+    }
 }
