@@ -122,3 +122,36 @@ section {
 .brands-list img {
     width: 30px;   
 }
+
+.titulo {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.slider {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+}
+
+.slider2 img {
+    width: 140px;
+    height: 180px;
+}
+  
+.slider div {
+    text-align: center;
+}
+  
+.slider img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+  
+.slider.slider1 div {
+    background: #f0f0f0;
+}
