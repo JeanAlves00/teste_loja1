@@ -15,4 +15,9 @@ $(document).ready(function(){
       focusOnSelect: true
     });
   });
-  
+
+  $(document).ready(function() {
+    $('.abrir-menu button').click(function() {
+        $('.menu').slideToggle();
+    })
+})

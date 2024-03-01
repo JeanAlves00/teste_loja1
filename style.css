@@ -79,6 +79,10 @@ header {
     max-width: 300px;
 }
 
+h2 {
+    border-bottom: 2px solid black;
+}
+
 .campo-pesquisa {
     flex: 1;
     padding: 8px;
@@ -156,20 +160,31 @@ section {
     background: #f0f0f0;
 }
 
-.promo {
-   text-align: center;   
-}
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 
-.promo li {
-    display: inline-block;
-    vertical-align: top; /* Para alinhar os elementos ao topo */
-    margin-right: 20px;
-}
+  /* Estilos para cada item da lista */
+  .product-list li {
+    width: calc(33.33% - 10px); /* Ajuste para o espaçamento */
+    margin: 5px; /* Espaçamento entre os itens */
+    text-align: center;
+  }
 
-.promo img {
+  /* Estilos para as imagens */
+  .product-list li img {
     width: 250px;
     height: 300px;
-}
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
 
 footer li {
     list-style: none;
@@ -185,8 +200,22 @@ footer .container {
     align-items: center;
 }
 
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .abrir-menu button {
+        margin-top: 16px;
+        background-color: #3498db;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
 
-@media only screen and (max-width: 768px) {
+    .abrir-menu button:hover {
+        background-color: #2980b9; 
+    }
+
     header {
         padding: 10px 0;
     }
@@ -220,6 +249,33 @@ footer .container {
         display: none;
     }
 
+    .submenu {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    
+    .menu > li {
+        float: both;
+    }
+    
+    .menu li:hover {
+        border-color: red;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu > li {
+        clear: both;
+    }
+    
+    .submenu li {
+        display: block;
+        padding: 4px;
+    }
+
     .promo img {
         max-width: 100%;
     }
@@ -227,10 +283,50 @@ footer .container {
     footer .container img {
         height: 28px;
     }
+
+    .abrir-menu{
+        text-align: center;
+    }
+
 }
 
-/* Estilos para telefones */
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
+
+    .abrir-menu button {
+        margin-bottom: 16px;
+        margin-top: 16px;
+        background-color: #3498db;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .abrir-menu button:hover {
+        background-color: #2980b9; 
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .about img {
+        max-width: 70%;
+    }
+
+    .product-list {
+        display: block;
+        margin: auto;
+        width: 50%;
+      }
+
     h1 {
         font-size: 24px;
     }
@@ -243,23 +339,53 @@ footer .container {
         padding: 4px 8px;
     }
 
+    .abrir-menu{
+        text-align: center;
+    }
+
+    .submenu {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    
+    .menu > li {
+        float: both;
+    }
+    
+    .menu li:hover {
+        border-color: red;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu > li {
+        clear: both;
+    }
+    
+    .submenu li {
+        display: block;
+        padding: 4px;
+    }
+
+    .promo {
+        max-width: 90%;
+        flex-wrap: wrap;
+    }
+
+    #destaques {
+        display: none;
+    }
+
     .about p {
         font-size: 14px;
     }
+}
 
-    .brands-list img {
-        max-width: 25px;
-    }
-
-    .slider {
-        width: 100%;
-    }
-
-    .slider2 img {
-        width: 80px;
-    }
-
-    footer .container img {
-        height: 24px;
+@media screen and (min-width: 1024px) {
+    .abrir-menu {
+        display: none;
     }
 }
