@@ -170,17 +170,17 @@ section {
     margin: 0 auto;
   }
 
-  /* Estilos para cada item da lista */
+  
   .product-list li {
-    width: calc(33.33% - 10px); /* Ajuste para o espaçamento */
+    width: calc(20%); /* Ajuste para o espaçamento */
     margin: 5px; /* Espaçamento entre os itens */
     text-align: center;
   }
 
   /* Estilos para as imagens */
   .product-list li img {
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     object-fit: cover;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -275,6 +275,12 @@ footer .container {
         display: block;
         padding: 4px;
     }
+
+    .product-list li {
+        width: calc(30%); /* Ajuste para o espaçamento */
+        margin: 5px; /* Espaçamento entre os itens */
+        text-align: center;
+      }
 
     .promo img {
         max-width: 100%;
