@@ -160,7 +160,7 @@ section {
     background: #f0f0f0;
 }
 
-  .product-list {
+.product-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -171,14 +171,14 @@ section {
   }
 
   
-  .product-list li {
+.product-list li {
     width: calc(20%); /* Ajuste para o espaçamento */
     margin: 5px; /* Espaçamento entre os itens */
     text-align: center;
   }
 
   /* Estilos para as imagens */
-  .product-list li img {
+.product-list li img {
     width: 200px;
     height: 250px;
     object-fit: cover;
@@ -277,7 +277,7 @@ footer .container {
     }
 
     .product-list li {
-        width: calc(30%); /* Ajuste para o espaçamento */
+        width: calc(40%); /* Ajuste para o espaçamento */
         margin: 5px; /* Espaçamento entre os itens */
         text-align: center;
       }
